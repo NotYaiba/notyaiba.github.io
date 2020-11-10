@@ -61,13 +61,18 @@ var index = 0
     var p = document.getElementsByClassName("imagewrap");
     var right = document.querySelector(".right");
     var left = document.querySelector(".left");
-
+    var w = window.outerWidth;
+    var scroll = 330;
+    if (w <= 850)
+        scroll = 230;
+    //  alert÷(body.style.minWidth);
+    alert(scroll);
     right.addEventListener('click', ()=>{
         console.log(index);
         if (index < p.length - 1)
         {
             // p[index].toggleClass('move');
-            move  += 330;
+            move  += scroll;
             p[index].style.transform = "translateX(-" + move + "px)";
              p[index + 1].style.transform = "translateX(-" + move + "px)";
             index++;
@@ -87,7 +92,7 @@ var index = 0
         if (index > 0)
         {
             // p[index].toggleClass('move');
-            move  -= 330;
+            move  -= scroll;
             p[index].style.transform = "translateX(-" + move + "px)";
             p[index - 1].style.transform = "translateX(-" + move + "px)";
             index--;

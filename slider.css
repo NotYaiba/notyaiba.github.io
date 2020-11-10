@@ -110,7 +110,7 @@ body {
   font-size: 20px;
   border: solid;
   padding: 4px 30px;
-  transition: transform 1ss ease-in;
+  transition: transform 1s ease-in;
 }
 
 .seeproduct-link a:hover {
@@ -149,7 +149,7 @@ body {
   margin: 15px;
   width: 300px;
   height: 255px;
-  transition: all 0.5s ease-in-out; 
+  transition: all 0.5s ease-in-out;
 }
 .pipi {
   position: absolute;
@@ -164,7 +164,7 @@ body {
   z-index: 1;
   top: 50%;
   left: 50%;
-   /* transition: all 0.5s ease-in-out; */
+  /* transition: all 0.5s ease-in-out; */
   transform: translate(-50%, -50%);
 }
 .img-product {
@@ -178,7 +178,7 @@ body {
   width: 300px;
   height: 255px;
   background-size: cover;
-}  
+}
 
 .imagewrap:hover .pipi {
   visibility: visible;
@@ -186,4 +186,63 @@ body {
 
 .imagewrap:hover .img-product {
   opacity: 1;
+}
+
+@media screen and (max-width: 850px) {
+  .slider h1 {
+    padding: auto;
+    font-size: 80px;
+    line-height: 2rem;
+  }
+  .slider h1 span {
+    font-size: 40px;
+    font-family: "montserrat", sans-serif;
+    z-index: 40;
+    display: block;
+    font-weight: initial;
+  }
+  .container p {
+    font-size: 9px;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    /* text-align: justify; */
+    /* font-family: 'Open Sans Condensed', sans-serif; */
+    font-family: "Courier New", Courier, monospace;
+  }
+  .imagewrap {
+    /* cursor: pointer; */
+    position: relative;
+    text-align: center;
+    display: block;
+    margin: 15px;
+    width: 200px;
+    height: 200px;
+    transition: all 0.5s ease-in-out;
+  }
+  .img-product {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+  }
+  .prod {
+    text-align: center;
+    color: grey;
+    margin-top: 10px;
+    font-family: "montserrat", sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-bottom: solid;
+    border-width: 2px;
+  }
+  .seeproduct-link a {
+  text-align: center;
+  color: grey;
+  text-decoration: none;
+  margin-top: 10px;
+  font-family: "Paytone One", sans-serif;
+  font-size: 15px;
+  border: solid;
+  padding: 2px 20px;
+  transition: transform 1s ease-in;
+}
 }
