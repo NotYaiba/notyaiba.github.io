@@ -65,8 +65,6 @@ var index = 0
     var scroll = 330;
     if (w <= 850)
         scroll = 230;
-    //  alert÷(body.style.minWidth);
-    alert(scroll);
     right.addEventListener('click', ()=>{
         console.log(index);
         if (index < p.length - 1)
