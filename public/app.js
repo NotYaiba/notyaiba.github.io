@@ -1,4 +1,5 @@
 
+ console.log("start")
  const bar_slide = () =>{
 
     const bar = document.querySelector('.bar');
